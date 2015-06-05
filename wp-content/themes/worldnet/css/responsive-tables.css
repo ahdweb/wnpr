@@ -1,0 +1,176 @@
+/* Foundation v2.1.4 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+/*body{font-family: arial; font-size: 16px; color:#676767;}*/
+
+.title_products{
+	height: 100px;
+	margin-bottom: 10px;
+	background: rgba(0,170,204,1);
+	background: -moz-linear-gradient(top, rgba(0,170,204,1) 0%, rgba(0,126,172,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,170,204,1)), color-stop(100%, rgba(0,126,172,1)));
+	background: -webkit-linear-gradient(top, rgba(0,170,204,1) 0%, rgba(0,126,172,1) 100%);
+	background: -o-linear-gradient(top, rgba(0,170,204,1) 0%, rgba(0,126,172,1) 100%);
+	background: -ms-linear-gradient(top, rgba(0,170,204,1) 0%, rgba(0,126,172,1) 100%);
+	background: linear-gradient(to bottom, rgba(0,170,204,1) 0%, rgba(0,126,172,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aacc', endColorstr='#007eac', GradientType=0 );
+}
+
+.product{
+	padding: 30px 0px 0px 20px;
+	color:#fff!important;
+	font-size: 2rem;
+	font-weight: lighter;	
+}
+table{border-spacing:  7px;}
+
+table tr th{
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: lighter;
+	text-align: center;
+	min-width: 120px;
+}
+
+.th_product{
+	background-color: #85cebb;
+	text-align: left;
+}
+.th_basic{
+	background-color: #5d9731;
+	width: 20%;
+	padding:5px;
+}
+.th_advanced{
+	background-color: #019fc4;
+	width: 20%;
+	padding:5px;
+}
+.th_premium{
+	background-color: #0168b3;
+	width: 20%;
+	padding:5px;
+}
+
+.th_description{
+	display: block;
+	font-size: .7rem;
+}
+
+/*tablas interiores*/
+.kind{
+	width: 120px;
+	display: block;
+	position: absolute;
+	text-align: right;
+	font-size: .7rem;
+	white-space: normal;
+}
+.kind_title{
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+table.info{
+	border-spacing: 0px;
+	font-size: .7rem;
+	margin-left: 135px;
+	width: 75%;
+	white-space: nowrap;
+	background-color: #d3ede4;
+}
+table.info tr:nth-child(odd){ background-color:#e2ede9;}
+
+table.basic {
+	text-align: center;
+	border-spacing: 0px;
+	font-size: .7rem;
+	background-color: #b6cd9f;
+	color: #0168b3;
+}
+table.basic tr:nth-child(odd){ background-color:#cfdac4; }
+
+table.advanced {
+	text-align: center;
+	border-spacing: 0px;
+	font-size: .7rem;
+	background-color: #a8dbec;
+	color: #0168b3;
+}
+table.advanced tr:nth-child(odd){ background-color:#bde7f5; }
+
+table.premium {
+	text-align: center;
+	border-spacing: 0px;
+	font-size: .7rem;
+	background-color: #c5d3ed;
+	color: #0168b3;
+}
+table.premium tr:nth-child(odd){ background-color:#d8e3f6; }
+
+.foot_table{margin-top: 20px;}
+.foot_table::before{
+	content: "VOICE DATA INTERNET CLOUD";
+	display: block;
+	background-color: #85cebb;
+	height: 30px;
+	padding: 15px 0 0 40px;
+	color: #FFF;
+	font-weight: bold;
+	font-size: .9rem;
+}
+
+.foot_table::after{
+	content: "";
+	display:block;
+	height: 80px;
+	width: 80px;
+	background-color: #85cebb;
+	border-radius: 50%;
+	position: relative;
+	top: -63px;
+	left: 70px;
+	z-index: -1;
+}
+
+/*General*/
+table {width: 100%;}
+table th { font-weight: bold; }
+table td, table th { padding: 2px 0px;}
+
+table.responsive .logo{margin: 0;}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+	
+	table.responsive { margin-bottom: 0;width: 160%;}
+	
+	.pinned { position: absolute; left: 0; top: 0; background: #fff; width: 50%; overflow: hidden; overflow-x: scroll; border-right: 1px solid #ccc; border-left: 1px solid #ccc; }
+	.pinned table { border-right: none; border-left: none; width: 100%;}
+	.pinned table th, .pinned table td { white-space: nowrap; }
+	.pinned td:last-child { border-bottom: 0;}
+	
+	div.table-wrapper { position: relative; margin-bottom: 20px; border-right: 1px solid #ccc;}
+	div.table-wrapper div.scrollable { margin-left: 50%; }
+	div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; }	
+	
+	table.responsive td, table.responsive th { position: relative;}
+	table.responsive th:first-child,  table.responsive td:first-child, table.responsive.pinned td { display: none; }
+	table.basic td:first-child, table.basic td{display: block!important;}
+	table.advanced td:first-child, table.advanced td{display: block!important;}
+	table.premium td:first-child, table.premium td{display: block!important;}
+
+	.logo{width: 100%; max-width: 230px;}
+}

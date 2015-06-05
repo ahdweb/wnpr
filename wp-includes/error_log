@@ -1,0 +1,8 @@
+[07-Jun-2014 01:39:48] PHP Fatal error:  Call to undefined function  add_action() in /home/dboyle/public_html/wp-includes/admin-bar.php on line 48
+[22-Jan-2015 18:39:03] PHP Fatal error:  Call to undefined function  _deprecated_file() in /home/dboyle/public_html/wp-includes/rss-functions.php on line 8
+[15-Feb-2015 20:44:33] PHP Fatal error:  Class 'Walker' not found in /home/dboyle/public_html/wp-includes/nav-menu-template.php on line 16
+[15-Feb-2015 20:44:50] PHP Fatal error:  Call to undefined function  _deprecated_file() in /home/dboyle/public_html/wp-includes/rss.php on line 19
+[15-Feb-2015 20:44:55] PHP Fatal error:  Call to undefined function  add_action() in /home/dboyle/public_html/wp-includes/author-template.php on line 454
+[15-Feb-2015 20:47:17] PHP Fatal error:  Call to undefined function  add_action() in /home/dboyle/public_html/wp-includes/general-template.php on line 1760
+[26-Mar-2015 19:42:41] PHP Fatal error:  Call to undefined function  _deprecated_file() in /home/dboyle/public_html/wp-includes/rss-functions.php on line 8
+[13-May-2015 08:43:51] PHP Fatal error:  Call to undefined function  _deprecated_file() in /home/dboyle/public_html/wp-includes/rss-functions.php on line 8

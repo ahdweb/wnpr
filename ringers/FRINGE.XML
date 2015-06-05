@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+ <screen_description>
+  <Image>
+<Data encoding="base64">Qk0+AgAAAAAAAD4AAAAoAAAAQAAAAEAAAAABAAEAAAAAAAACAADEDgAAxA4AAAAAAAAAAAAAAAAA
+AP///wD///////////////wf////////AAB///////gS+A//////4QLxA/////+AAmBw/////gAg
+YHB////8YAAgcB////iQH/5gD///8JCH4OAH///gwAfgIAP//8gAx+MMEf//lCPH48AQ//8iR8fj
+8QB//gGfx+P4gH/+cT/H4/xEP/wGf8fj/gAf/AT/x+P/AB/4Qf/H4/+Qz/gJ/8fj/8kP8gP/x+P/
+xCfwE//H4//kJ/Qn/8fj//QH4Cf/x+P/8hfmD//H4//yE+fP/8fj//rz78//x+P/+fPP3/HH44f5
++8/f8AfgB/n7z9/wB+AH/fvP3/AH4Af9+8/f8AfgB/37z9/xx+OH/fvP3//H4//9+8/f/8fj//n7
+z8//x+P/+fvvz4/H4/D58+fPgACAAPnz5++AAIAA8/Pn54AAgADz9/fngACAAPPn8/P/////5+fz
+8//////n5/n5//mf/8/P+fj/+B//j8/8/P/8H/+fn/z+f/gf/z+f/nw/8A/+Pz/+OJ/wD/ief/8x
+B/5/8QR//5AD/n/gBP//yAD/fwgJ///EBB/8AXP//+IBgACAR///+IA4CgIP///8QAYIQR////4Q
+DgkEP////4QOiDD/////4cYgg//////4HiwP//////8AAH////////gP////////////////////
+/////w==
+</Data>
+  <LocationX>0</LocationX>
+  <LocationY>0</LocationY>
+  <Invert>0</Invert>
+ </Image>
+ <Clock>
+  <LocationX>80</LocationX>
+  <LocationY>15</LocationY>
+ </Clock>
+ <Date>
+  <LocationX>108</LocationX>
+  <LocationY>56</LocationY>
+ </Date>
+ <Line>
+  <Account>
+   <LocationX>0</LocationX>
+   <LocationY>0</LocationY>
+  </Account>
+ </Line>
+</screen_description>

@@ -1,0 +1,2 @@
+[22-Jan-2015 19:04:53] PHP Fatal error:  Call to undefined function  wp_nonce_field() in /home/dboyle/public_html/wp-content/plugins/easy-columns/easy-columns-options.php on line 66
+[22-Jan-2015 19:05:13] PHP Fatal error:  Call to undefined function  plugin_basename() in /home/dboyle/public_html/wp-content/plugins/easy-columns/easy-columns.php on line 40
