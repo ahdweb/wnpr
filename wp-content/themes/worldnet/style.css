@@ -56,7 +56,7 @@ p { margin:0px 0px 0px 0px; text-align:justify; font-size:13px; line-height:150%
 
 
 
-ul li { margin:0px 0px 10px 0px; color:#3e3e3e; text-align:left; }
+ul li { margin:0px 0px 20px 0px; color:#3e3e3e; text-align:left; }
 
 
 
@@ -570,6 +570,10 @@ ul.footer_link li a:hover { color:#009FC2;}
 
     .container {width:300px; text-align:center;}
 
+    .contant_main h2 {
+    	font-size: 36px;
+    	margin: 20px 0px 20px 0px;
+    }
 
 
 	.logo { margin:6px 0 0 0; float:none; width:auto;}
@@ -585,7 +589,7 @@ ul.footer_link li a:hover { color:#009FC2;}
 
 
 /*	.header_right ul li a {margin:0 10px 0 10px;}
-*/	.header_right ul li a {margin:0 5px 0 5px;}
+*/	.header_right ul li a {margin:0 5px 0 3px;}
 
 	
 
@@ -751,6 +755,7 @@ p {
 }
 
 p {
+	line-height: 30px;
 	margin-bottom: 16px;
 }
 
