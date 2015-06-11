@@ -18,16 +18,11 @@ Theme Name: worldnet
 
 
 
-
-
-
-
-
-body {margin:0px 0px 0px 0px; font-family:Arial, Helvetica, sans-serif;}
-
-
-
-
+body {
+	margin: 0;
+	font-family: "Domine", Georgia, "Times New Roman", serif;
+	letter-spacing: 0.02rem;
+}
 
 
 
@@ -61,11 +56,11 @@ p { margin:0px 0px 0px 0px; text-align:justify; font-size:13px; line-height:150%
 
 
 
-ul li { margin:0px 0px 10px 0px; font-size:13px; line-height:150%; color:#3e3e3e; text-align:left; }
+ul li { margin:0px 0px 10px 0px; color:#3e3e3e; text-align:left; }
 
 
 
-ol li { margin:0px 0px 10px 0px; font-size:13px; line-height:150%; color:#3e3e3e; }
+ol li { margin:0px 0px 10px 0px; color:#3e3e3e; }
 
 
 
@@ -457,10 +452,6 @@ ul.footer_link li a:hover { color:#009FC2;}
 
 
 
-.footer_in p {margin:21px 0 0 2px; padding:0; float:left; font-size:13px; color:#717073; font-weight:normal; line-height:18px;}
-
-
-
 .footer_logo { margin:0; padding:0; float:left; width:1140px;}
 
 
@@ -741,30 +732,76 @@ ul.footer_link li a:hover { color:#009FC2;}
 
 /* Revisions */
 
-.custom-text,
-.custom-text p,
-.custom-text ul li,
-.custom-text ol li,
-.custom-text h4 {
-	letter-spacing: 0.02rem;
+h2,
+h4 {font-family: "Montserrat", Arial, Helvetica, sans-serif;}
+
+h4 {
+	font-size: 24px; 
+	margin: 0 0 5px 0; 
 }
 
-.custom-heading,
-.custom-text h4 {font-family: "Montserrat", Arial, Helvetica, sans-serif!important;}
-
-.custom-text h4 {
-	margin: 0 0 5px 0; font-size:24px; 
-}
-
-.custom-text ul {
+ul {
 	margin: 30px 0;
 }
 
-.custom-text p,
-.custom-text ul li,
-.custom-text ol li {font-family: "Domine", Georgia, "Times New Roman", serif;}
-
-.custom-text p {
+ul,
+ol,
+p {
 	font-size: 16px;
+}
+
+p {
 	margin-bottom: 16px;
 }
+
+.footer_in p,
+.page-template-full-width-sans-serif,
+.page-template-front-page,
+.page-template-knowledge
+/*.page-template-full-width-sans-serif a,
+.page-template-full-width-sans-serif h1,
+.page-template-full-width-sans-serif h3,
+.page-template-full-width-sans-serif h5,
+.page-template-full-width-sans-serif h6,
+.page-template-full-width-sans-serif p,
+.page-template-full-width-sans-serif ol,
+.page-template-full-width-sans-serif ul */ {
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: normal;
+}
+
+
+.page-template-full-width-sans-serif h2,
+.page-template-full-width-sans-serif h4,
+.page-template-front-page h2,
+.page-template-front-page h4,
+.page-template-knowledge h2,
+.page-template-knowledge h4 { font-family: "Roboto", Arial, Helvetica, sans-serif; }
+
+.page-template-full-width-sans-serif h4,
+.page-template-front-page h4,
+.page-template-knowledge h4 {
+	font-size: 22px;
+	margin: 0px 0px 10px 0px;
+}
+
+#navigation,
+.page-template-full-width-sans-serif ul,
+.page-template-front-page ul,
+.page-template-knowledge ul,
+.page-template-full-width-sans-serif p,
+.page-template-front-page p,
+.page-template-knowledge p {
+	line-height: 150%;
+	font-size: 13px;
+}
+
+
+.page-template-full-width-sans-serif p,
+.page-template-front-page p,
+.page-template-knowledge p {
+	margin: 0;
+	margin-bottom: 0;
+}
+
+.footer_in p {margin:21px 0 0 2px; padding:0; float:left; font-size:13px; color:#717073; font-weight:normal; line-height:18px;}
