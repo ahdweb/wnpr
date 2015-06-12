@@ -762,25 +762,15 @@ p {
 .footer_in p,
 .page-template-full-width-sans-serif,
 .page-template-front-page,
-.page-template-knowledge
-/*.page-template-full-width-sans-serif a,
-.page-template-full-width-sans-serif h1,
-.page-template-full-width-sans-serif h3,
-.page-template-full-width-sans-serif h5,
-.page-template-full-width-sans-serif h6,
-.page-template-full-width-sans-serif p,
-.page-template-full-width-sans-serif ol,
-.page-template-full-width-sans-serif ul */ {
+.page-template-knowledge {
 	font-family: Arial, Helvetica, sans-serif;
 	letter-spacing: normal;
 }
 
 
-.page-template-full-width-sans-serif h2,
 .page-template-full-width-sans-serif h4,
 .page-template-front-page h2,
 .page-template-front-page h4,
-.page-template-knowledge h2,
 .page-template-knowledge h4 { font-family: "Roboto", Arial, Helvetica, sans-serif; }
 
 .page-template-full-width-sans-serif h4,
