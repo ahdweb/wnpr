@@ -102,7 +102,6 @@ get_header(); ?>
 				
 			}
 			
-			
             endwhile;
 			}
             //echo '<pre>';
