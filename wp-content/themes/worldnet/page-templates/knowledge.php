@@ -51,72 +51,76 @@ get_header(); ?>
   <div class="cont_right_box big_width">  -->
    
     <?php
-        $terms = get_terms( 'category', array( 'parent' => 21, 'orderby'=>'term_id', 'order'=>'DESC' ) );
+      $terms = get_terms( 'category', array( 'parent' => 21, 'orderby'=>'term_id', 'order'=>'DESC' ) );
 		$count = 1; 
-        foreach($terms as $term)
-        {
-			if($count == 3)
-			{
-				$class = 'ezcol-last';
-				$count = 1;
-			}
-			else
-			{
-				$class = '';
-				$count++;
-			}
-			
-			?> 
-            <div class="ezcol ezcol-one-third minhight <?=$class;?>">
-			<?php
-            $term->term_id;
-            if (function_exists('z_taxonomy_image_url')) {
-			echo '<a href="'.get_category_link($term->term_id).'" ><img src="'.z_taxonomy_image_url($term->term_id).'" /></a>';
-             
-			}
-			
-            $allPost = new WP_Query(array('cat'=>$term->term_id ,'post_type'=>'post', 'orderby'=>'date', 'order'=>'DESC','posts_per_page'=>4));
-			$i == 0;
-			$totalpost = $allPost->post_count; 
-			if($allPost->have_posts()) { 
-            while ( $allPost->have_posts() ) : $allPost->the_post();?>
-             <?php
-			    
-			  if($i == 0) :?>   
-                <p>&nbsp;</p>
-                <h4><a href="<?php  echo get_post_permalink(); ?>" ><?php the_title(); ?></a></h4>
-                <p><?php the_excerpt(); ?></p>
-                <p>&nbsp;</p>
-                <hr>
-                <p>&nbsp;</p>
-            <?php  else : ?>
-            <p><strong><a href="<?php  echo get_post_permalink(); ?>" ><?php the_title(); ?></a></strong></p><br>
-            
-            <?php
-			endif;
-			
-			$i++;
-			if($i == $totalpost)
-			{
-				$i = 0;
+		
+			foreach($terms as $term) {
+	        
+				if($count == 3) {
+					$class = 'ezcol-last';
+					$count = 1;
+				} else 	{
+					$class = '';
+					$count++;
+				}
+				?> 
 				
-			}
-			
-            endwhile;
-			}
-            //echo '<pre>';
-            //print_r($allPost);
-            
-         ?>
-          </div>
-         <?php   
-            
-        }
-    
-    //wp_reser_query();
-           // wp_reset_postdata();
-            
-     ?>
+	         <div class="ezcol ezcol-one-third minhight <?=$class;?>">
+		         
+		         <article class="entry-knowledge">		         
+			            
+						<?php
+			            $term->term_id;
+			            if (function_exists('z_taxonomy_image_url')) {
+								echo '<a href="'.get_category_link($term->term_id).'" ><img src="'.z_taxonomy_image_url($term->term_id).'" /></a>'; 
+							}
+						
+				         $allPost = new WP_Query(array('cat'=>$term->term_id ,'post_type'=>'post', 'orderby'=>'date', 'order'=>'DESC','posts_per_page'=>4));
+							$i == 0;
+							$totalpost = $allPost->post_count; 
+							
+							if($allPost->have_posts()) {  ?>
+							
+
+					            <?php while ( $allPost->have_posts() ) : $allPost->the_post();?>
+										<?php if($i == 0) :?>   
+											<p>&nbsp;</p>
+											<header class="entry-header">
+												<h4 class="entry-title"><a href="<?php  echo get_post_permalink(); ?>" ><?php the_title(); ?></a></h4>
+											</header>
+											
+											<?php /*<p><?php the_excerpt(); ?></p>*/ ?>
+											<div class="entry-excerpt">
+												<p><?php echo get_custom_excerpt(get_the_content(),150); ?></p>
+											</div>
+										<?php else : ?>
+											<p><strong><a href="<?php  echo get_post_permalink(); ?>" ><?php the_title(); ?></a></strong></p><br>
+										<?php endif; ?>
+					            
+									<?php
+										$i++;
+										
+										if($i == $totalpost) {
+											$i = 0;
+										} ?>
+								
+					            <?php endwhile; ?>
+				            
+							<?php } ?>
+	            
+				   </article>
+				   
+	         </div><!--ezcol-->
+	         
+	      <?php 
+		   } //end foreach ?>
+        
+        
+		<?php
+			//wp_reser_query();
+			// wp_reset_postdata();		
+		?>
+     
    </div>
 </div>
 

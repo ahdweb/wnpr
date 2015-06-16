@@ -731,6 +731,10 @@ ul.footer_link li a:hover { color:#009FC2;}
 .qtrans_language_chooser li.lang-es.active a { background:url(images/idioma-espanol-on.png) no-repeat;}
 */
 
+.entry-knowledge .entry-header{margin-bottom: 0.8rem;}
+.entry-knowledge .entry-excerpt{margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px dotted #999;}
+
+
 
 
 
@@ -800,3 +804,17 @@ p {
 }
 
 .footer_in p {margin:21px 0 0 2px; padding:0; float:left; font-size:13px; color:#717073; font-weight:normal; line-height:18px;}
+
+
+
+
+
+
+
+/*========================*/
+/*RESPONSIVE STYLES*/
+/*========================*/
+
+@media only screen and (min-width: 767px){
+	.entry-knowledge .entry-header{height: 50px; overflow: hidden;}
+}

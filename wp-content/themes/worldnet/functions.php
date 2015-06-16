@@ -526,3 +526,13 @@ function tag_cloud( )
 }
 
 add_shortcode('ult_tag_cloud', 'tag_cloud');
+
+
+//Custom Excerpt
+function get_custom_excerpt($content="",$lenght=280,$readmore="..."){
+	$result = preg_replace('/\s+?(\S+)?$/', '', substr( strip_tags($content), 0, $lenght));
+	if(!empty($result)){
+		$result .= ' '.$readmore;
+	}
+	return $result;
+}
