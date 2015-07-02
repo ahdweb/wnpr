@@ -45,7 +45,8 @@ ini_set("soap.wsdl_cache_enabled", "0");
 get_header(); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
-	<h2><?php if(isset($j_title)){ echo $j_title;}else{the_title();} ?></h2>
+	<!-- <h2><?php if(isset($j_title)){ echo $j_title;}else{the_title();} ?></h2> -->
+    <h2><?php the_title();?></h2>
 	<div class="cont_right_box big_width">
 		
 		<?php if ( has_post_thumbnail() ) : ?>

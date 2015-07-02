@@ -35,6 +35,10 @@
   <link rel="apple-touch-icon" sizes="76x76" href="ios/AppIcon.appiconset/Icon-76.png" />
   <link rel="apple-touch-icon" sizes="152x152" href="ios/AppIcon.appiconset/Icon-76@2x.png" />
   <link rel="apple-touch-icon" sizes="58x58" href="ios/AppIcon.appiconset/Icon-Small@2x.png" />
+
+<style>
+#navigation a { margin: 0px 30px 0px 0px; }
+</style>
 </head>
 <body <?php body_class(); ?>>
 <div class="<?php if(is_front_page() ){ echo "main_wrap"; } else { echo "inner_wrap"; } ?>"> 
