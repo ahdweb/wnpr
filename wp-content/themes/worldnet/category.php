@@ -29,22 +29,22 @@ get_header(); ?>
 				<div class="archive-meta"><?php echo category_description(); ?></div>
 			<?php endif; ?>
 			
-
+			<ul class="entries-list">
 			<?php
 			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+			while ( have_posts() ) : the_post(); ?>
+				<li class="entry">
+					<h2 class="entry-title">
+						<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'twentytwelve' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
+					</h2>
+					<div class="entry-summary">
+						<p><?php the_excerpt_max_charlength(150); ?></p>
+					</div>
+				</li>
+			<?php endwhile; ?>
+			</ul>
 
-				/* Include the post format-specific template for the content. If you want to
-				 * this in a child theme then include a file called called content-___.php
-				 * (where ___ is the post format) and that will be used instead.
-				 */
-				//get_template_part( 'content', get_post_format() );
-				echo '<a href="'.get_post_permalink().'" >'.get_the_title().'</a><br>';
-				//the_content();
-				echo '<br/>';
-			endwhile;
-
-			twentytwelve_content_nav( 'nav-below' );
+			<?php twentytwelve_content_nav( 'nav-below' );
 			?>
 </div>
 		<?php else : ?>

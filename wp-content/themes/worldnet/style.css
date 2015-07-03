@@ -755,6 +755,10 @@ p {
 	margin-bottom: 16px;
 }
 
+.entries-list .entry {
+	list-style: none;
+}
+
 .footer_in p {
 	margin: 21px 0 0 2px;
 	padding: 0;
@@ -809,21 +813,33 @@ p {
 	}
 }
 
+.entries-list {
+	padding-left: 0;
+}
+
+.entries-list .entry-meta,
 .search-results .entry-meta {
 	color: #606060;
 	font-size: 0.8em;
 }
 
+.entries-list .entry-title,
 .search-results .entry-title {
 	margin: 0;
 	margin-bottom: 5px;
 	font-size: 1.2em;
 }
 
+.entries-list .entry-summary p:last-of-type {
+	margin-bottom: 0;
+}
+
+.entries-list .entry-summary p,
 .search-results .entry-summary p {
 	font-size: 0.9em;
 }
 
+.entries-list .entry,
 .search-results article {
 	height: auto;
 	overflow: hidden;

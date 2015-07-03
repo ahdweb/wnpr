@@ -51,7 +51,7 @@ get_header(); ?>
   <div class="cont_right_box big_width">  -->
    
     <?php
-      $terms = get_terms( 'category', array( 'parent' => 21, 'orderby'=>'term_id', 'order'=>'DESC' ) );
+      $terms = get_terms( 'category', array( 'parent' => 21, 'orderby'=>'term_id', 'order'=>'ASC' ) );
 		$count = 1; 
 		
 			foreach($terms as $term) {
