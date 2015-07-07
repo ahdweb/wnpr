@@ -52,7 +52,7 @@ get_header(); ?>
  
    
     <?php
-      $terms = get_terms( 'category', array( 'parent' => 21, 'orderby'=>'term_id', 'order'=>'DESC' ) );
+      $terms = get_terms( 'category', array( 'parent' => 21, 'orderby'=>'term_id', 'order'=>'ASC' ) );
 		$count = 1; 
 		
 			foreach($terms as $term) {

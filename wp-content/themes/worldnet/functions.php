@@ -528,11 +528,30 @@ function tag_cloud( )
 add_shortcode('ult_tag_cloud', 'tag_cloud');
 
 
-//Custom Excerpt
+//Custom Excerpts
 function get_custom_excerpt($content="",$lenght=280,$readmore="..."){
 	$result = preg_replace('/\s+?(\S+)?$/', '', substr( strip_tags($content), 0, $lenght));
 	if(!empty($result)){
 		$result .= ' '.$readmore;
 	}
 	return $result;
+}
+
+function the_excerpt_max_charlength($charlength) {
+	$excerpt = get_the_excerpt();
+	$charlength++;
+
+	if ( mb_strlen( $excerpt ) > $charlength ) {
+		$subex = mb_substr( $excerpt, 0, $charlength - 5 );
+		$exwords = explode( ' ', $subex );
+		$excut = - ( mb_strlen( $exwords[ count( $exwords ) - 1 ] ) );
+		if ( $excut < 0 ) {
+			echo mb_substr( $subex, 0, $excut );
+		} else {
+			echo $subex;
+		}
+		echo '[...]';
+	} else {
+		echo $excerpt;
+	}
 }
