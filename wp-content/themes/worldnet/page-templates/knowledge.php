@@ -37,7 +37,7 @@ get_header(); ?>
 				
 		<?php endif; */?>
 		<?php the_content(); ?>
-	
+	<p>&nbsp;</p>
 	<?php endwhile; // end of the loop. 
 	 ?>
      
@@ -49,6 +49,7 @@ get_header(); ?>
 
 <!--<h2>Knowledge Center 2015</h2>
   <div class="cont_right_box big_width">  -->
+ 
    
     <?php
       $terms = get_terms( 'category', array( 'parent' => 21, 'orderby'=>'term_id', 'order'=>'DESC' ) );
@@ -66,7 +67,6 @@ get_header(); ?>
 				?> 
 				
 	         <div class="ezcol ezcol-one-third minhight <?=$class;?>">
-		         
 		         <article class="entry-knowledge">		         
 			            
 						<?php

@@ -26,4 +26,7 @@ jQuery(document).ready(function($) {
 		$('.skype_pnh_print_container').removeClass('skype_pnh_print_container');
 		$('.skype_pnh_container').remove();
 	}, 5000);
+
+	
+	
 }); 
