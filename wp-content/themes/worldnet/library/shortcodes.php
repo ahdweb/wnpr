@@ -7,6 +7,7 @@ function add_latest_posts( $atts, $content = null ) {
 	extract( shortcode_atts( array(
 		'title' => __('Latest Posts','twentytwelve'),
 		'number' => 1,
+		'show_date' => false,
 		'container_class' => '',
 		'class' => '',
 	), $atts ) );
@@ -29,10 +30,17 @@ function add_latest_posts( $atts, $content = null ) {
 	while ($the_query->have_posts()) : 
 		$the_query->the_post();
 		
-		$date = get_the_date('F d, Y');
+		$_date="";
+		if($show_date){
+			$_date = '<span class="date">'.get_the_date('F d, Y').'</span>';
+		}
 		
-		$output .= '<li><span class="date">'.$date.'</span><a href="'.get_the_permalink().'">'.get_the_title().'</a></li>';
+		$_excerpt = get_custom_excerpt(get_the_content(),105);
 		
+		$output .= '<li>'.$_date.'
+							<h3><a href="'.get_the_permalink().'">'.get_the_title().'</a></h3>
+							<p class="entry-excerpt">'.$_excerpt.'</p>
+						</li>';
 		
 	endwhile;
 	
