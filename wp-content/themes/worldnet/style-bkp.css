@@ -13,21 +13,16 @@ Theme Name: worldnet
 -------------------------------------------------------------- */
 
 
-
-
-
-
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Domine:400,700);
 
 
 
-
-body {margin:0px 0px 0px 0px; font-family: "Montserrat", Arial, Helvetica, sans-serif; letter-spacing: 0.02rem; line-height: 1.5; }
-
-
-
-
+body {
+	margin: 0;
+	font-family: "Domine", Georgia, "Times New Roman", serif;
+	letter-spacing: 0.02rem;
+}
 
 
 
@@ -57,35 +52,23 @@ a { color:#00A8C9; text-decoration:none;}
 
 
 
-p { margin:0; margin-bottom: 16px; text-align:justify; font-size:16px; color:#3e3e3e; }
-
-p,
-ul li,
-ol li {font-family: "Domine", Georgia, "Times New Roman", serif;}
-
-ul { margin: 30px 0;}
-
-ul li { margin:0px 0px 10px 0px; font-size:13px; line-height:150%; color:#3e3e3e; text-align:left; }
+p { margin:0px 0px 0px 0px; text-align:justify; font-size:13px; line-height:150%; color:#3e3e3e; }
 
 
 
-ol li { margin:0px 0px 10px 0px; font-size:13px; line-height:150%; color:#3e3e3e; }
+ul li { margin:0px 0px 20px 0px; color:#3e3e3e; text-align:left; }
+
+
+
+ol li { margin:0px 0px 10px 0px; color:#3e3e3e; }
 
 
 
 h1 { margin:0px 0px 20px 0px; font-size:40px; color:#2c62ae; }
 
-h2,
-h4 {font-family: "Montserrat", Arial, Helvetica, sans-serif!important;}
 
 
-
-h4 { margin: 0 0 5px 0; font-size:24px; color:#349bbf; }
-
-
-
-
-
+h4 { margin:0px 0px 10px 0px; font-size:22px; color:#349bbf; }
 
 
 .main_wrap {margin:0; padding:0; width:100%; background:url(images/bg-1.png) no-repeat top center; height:auto;}
@@ -296,10 +279,6 @@ a.learn_how:hover {background:#ffc424; color:#fff;}
 
 
 
-
-
-
-
 .con_bg ul {margin:14px 0 0 16px; padding:0; float:left; width:295px;list-style:none;}
 
 
@@ -334,8 +313,7 @@ a.learn_how:hover {background:#ffc424; color:#fff;}
 
 
 
-.contant_main h2 {margin:35px 0px 35px 0px; padding:0; font-size:40px; font-weight:normal; color:#fff; text-align:left;}
-
+.contant_main h2 {margin:40px 0; padding:0; font-size:2em; font-weight:normal; color:#fff; text-align:left;}
 
 
 .sidebar {margin:15px 0 0 0; padding:0; float:left; width:250px;} 
@@ -366,7 +344,7 @@ a.learn_how:hover {background:#ffc424; color:#fff;}
 
 
 
-.cont_right_box.big_width {width:1140px; border:none;}
+.cont_right_box.big_width {width:1140px; border:none; padding-top: 15px;}
 
 
 
@@ -467,10 +445,6 @@ ul.footer_link li a {margin:0 6px 0 3px; padding:0; color:#717073; text-decorati
 
 
 ul.footer_link li a:hover { color:#009FC2;}
-
-
-
-.footer_in p {margin:21px 0 0 2px; padding:0; float:left; font-size:12px; font-family: "Montserrat", Arial, Helvetica, sans-serif; color:#717073; font-weight:normal; line-height:18px;}
 
 
 
@@ -593,7 +567,6 @@ ul.footer_link li a:hover { color:#009FC2;}
     .container {width:300px; text-align:center;}
 
 
-
 	.logo { margin:6px 0 0 0; float:none; width:auto;}
 
 
@@ -607,7 +580,7 @@ ul.footer_link li a:hover { color:#009FC2;}
 
 
 /*	.header_right ul li a {margin:0 10px 0 10px;}
-*/	.header_right ul li a {margin:0 5px 0 5px;}
+*/	.header_right ul li a {margin:0 5px 0 3px;}
 
 	
 
@@ -749,4 +722,163 @@ ul.footer_link li a:hover { color:#009FC2;}
 .qtrans_language_chooser li.lang-es.active a { background:url(images/idioma-espanol-on.png) no-repeat;}
 */
 
+.entry-knowledge .entry-header{margin-bottom: 0.8rem;}
+.entry-knowledge .entry-excerpt{margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px dotted #999;}
+
+
+/* Revisions */
+
+.article > h3,
+.article-title {
+    font-size: 2em;
+    color: #3e3e3e;
+    margin-bottom: 5px;
+}
+
+h4 {
+	font-size: 24px; 
+	margin: 0 0 5px 0; 
+}
+
+ul {
+	margin: 30px 0;
+}
+
+ul,
+ol,
+p {
+	font-size: 16px;
+}
+
+p {
+	line-height: 30px;
+	margin-bottom: 16px;
+}
+
+.entries-list .entry {
+	list-style: none;
+}
+
+.footer_in p {
+	margin: 21px 0 0 2px;
+	padding: 0;
+	float: left;
+	font-size: 13px;
+	color: #717073;
+	font-weight: normal;
+	line-height: 18px;
+}
+
+.footer_in p,
+.page-template-full-width-sans-serif,
+.page-template-front-page,
+.page-template-knowledge {
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: normal;
+}
+
+.page-template-full-width-sans-serif h4,
+.page-template-front-page h2,
+.page-template-front-page h4,
+.page-template-knowledge h4 { font-family: "Roboto", Arial, Helvetica, sans-serif; }
+
+.page-template-full-width-sans-serif h4,
+.page-template-front-page h4,
+.page-template-knowledge h4 {
+	font-size: 22px;
+	margin: 0px 0px 10px 0px;
+}
+
+#navigation,
+.page-template-full-width-sans-serif ul,
+.page-template-front-page ul,
+.page-template-knowledge ul,
+.page-template-full-width-sans-serif p,
+.page-template-front-page p,
+.page-template-knowledge p {
+	line-height: 150%;
+	font-size: 13px;
+}
+
+.page-template-full-width-sans-serif p,
+.page-template-front-page p,
+.page-template-knowledge p {
+	margin: 0;
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 479px) {
+	.search-results .page-title {
+		margin: 20px 0;
+	}
+}
+
+.entries-list {
+	padding-left: 0;
+}
+
+.entries-list .entry-meta,
+.search-results .entry-meta {
+	color: #606060;
+	font-size: 0.8em;
+}
+
+.entries-list .entry-title,
+.search-results .entry-title {
+	margin: 0;
+	margin-bottom: 5px;
+	font-size: 1.2em;
+}
+
+.entries-list .entry-summary p:last-of-type {
+	margin-bottom: 0;
+}
+
+.entries-list .entry-summary p,
+.search-results .entry-summary p {
+	font-size: 0.9em;
+}
+
+.entries-list .entry,
+.search-results article {
+	height: auto;
+	overflow: hidden;
+	border-bottom: 1px solid #F2F2F2;
+	margin-bottom: 3rem;
+	padding-bottom: 8px;
+}
+
+#nav-below {
+	margin-bottom: 1.5rem;
+}
+
+.search-results article img {
+	border: 1px solid #606060;
+	width: 180px;
+	height: 120px;
+	margin-left: 30px;
+}
+
+.sr-holder {
+	padding-top: 30px;
+}
+
+.sr-right {
+	min-height: 90px;
+}
+
+@media only screen and (max-width: 767px) {
+	.sr-right {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/*========================*/
+/*RESPONSIVE STYLES*/
+/*========================*/
+
+@media only screen and (min-width: 767px){
+	.entry-knowledge .entry-header{height: 50px; overflow: hidden;}
+}
 
