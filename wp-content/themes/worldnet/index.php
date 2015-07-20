@@ -33,7 +33,7 @@ get_header(); ?>
 				</div>
 			</section>
 
-			<?php twentytwelve_content_nav( 'nav-below' ); ?>
+			<?php // twentytwelve_content_nav( 'nav-below' ); ?>
 
 		<?php else : ?>
 
