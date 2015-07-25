@@ -71,10 +71,17 @@ get_header(); ?>
 			            
 						<?php
 			            $term->term_id;
-			            if (function_exists('z_taxonomy_image_url')) {
-								echo '<a href="'.get_category_link($term->term_id).'" ><img src="'.z_taxonomy_image_url($term->term_id).'" /></a>'; 
-							}
 						
+							if(qtrans_getLanguage()=='es') {
+								//Get Image for Spanish Version
+								echo '<a href="'.get_category_link($term->term_id).'" ><img src="'.get_field('image_for_spanish_version','category_'.$term->term_id).'" alt="'.$term->name.'" /></a>';
+							}else{
+								//Get Image for English Version
+				            if (function_exists('z_taxonomy_image_url')) {
+									echo '<a href="'.get_category_link($term->term_id).'" ><img src="'.z_taxonomy_image_url($term->term_id).'" alt="'.$term->name.'" /></a>'; 
+								}									
+							}
+							
 				         $allPost = new WP_Query(array('cat'=>$term->term_id ,'post_type'=>'post', 'orderby'=>'date', 'order'=>'DESC','posts_per_page'=>4));
 							$i == 0;
 							$totalpost = $allPost->post_count; 
